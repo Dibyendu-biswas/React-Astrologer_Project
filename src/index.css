@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pageHero{
+    max-width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, #ee0707, #ff4c46e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pageHero h3{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+/* about section */
+.about{
+    max-width: 100%;
+    height: 600px;
+    background: linear-gradient(180deg, #f2391c, #fc6823);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.aboutContent{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: px 7rem;
+    color: white;
+}
+.shiv{
+    width: 650px;
+    height: 550px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.aboutContent h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+.aboutContent p{
+    font-size: 1.2rem;
+    padding: 10px 0;
+    letter-spacing: 0.8px;
+}
+
+/* Slider section */
+.slider{
+    width: 100%;
+    height: 400px;
+    background-color: #fc6823;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sliderContent{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+.sliderImg{
+    width: 100%;
+    height: 380px;
+    /* flex: 1; */
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.next{
+    position: absolute;
+    top: 11rem;
+    right: 2rem;
+}
+.prev{
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+}
+svg{
+    font-size: 2rem;
+}
+.singlePage{
+    width: 100%;
+    height: 100vh;
+}
+.service{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+
+.Img{
+    width: 650px;
+    height: 450px;
+    /* object-fit: cover; */
+}
+
+/* Faq section */
+
+.faq{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163,8,8);
+    flex-direction: column;
+}
+.question{
+    width: 1200px;
+}
+.question header{
+    display: flex;
+    padding: 2px;
+    gap: 1rem;
+    margin: 1rem;
+}
+.question svg{
+    font-size: 1.5rem;
+}
+.question button{
+    background-color: transparent;
+    border: none;
+
+}
+.question header h4{
+    color: white;
+    font-size: 1.2rem;
+}
+.question header hr,h4.active{
+    color: yellow;
+
+}
+.question p{
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    background-color: rgb(255,192,67);
+    animation-duration: 5s;
+    animation-name: slider;
+}
+
+/* for Faq animation but didnt work  */
+@keyframes slider{
+    form{
+        margin-top: 100%;
+    }
+    to{
+        margin-top:0%;
+    }
+}
+
+.services-submenu{
+    position: absolute;
+    top: 4rem;
+    right: 18rem;
+    list-style: none;
+    text-align: start;
+    z-index: 10;
+  }
+  .location-submenu{
+    position: absolute;
+    top: 4rem;
+    right: 6rem;
+    list-style: none;
+    text-align: start;
+    z-index: 10;
+  }
+  .services-submenu li,.location-submenu li{
+    background:rgb(255,250,33);
+    cursor: pointer;
+    width: 350px;
+   padding: 0.5rem;
+   font-size: 1.5rem;
+   border-bottom: 1px solid rgba(163, 160, 160, 0.705);
+  }
+  
+  .services-submenu li a:hover,
+  .location-submenu li a:hover {
+    color: rgb(31, 31, 203);
+  }
+  
+  .services-submenu.clicked,  .location-submenu.clicked{
+    display: none;
+  }
+  /* .submenu-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+  }
+   */
+ .service{
+    width: 100%;
+    height: 100vh;
+    background-color: #fc6823;
+ }
